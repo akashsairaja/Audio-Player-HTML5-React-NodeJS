@@ -1,0 +1,25 @@
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+**/node_modules
+
+#dist folder
+dist
+
+#package-lock.json
+**/package-lock.json
+
+**/.env
+
+# IDEA/Webstorm project files
+.idea
+
+#VSCode metadata
+.vscode

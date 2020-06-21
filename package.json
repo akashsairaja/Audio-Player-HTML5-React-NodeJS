@@ -1,0 +1,47 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "music player app react/html5",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p run:client run:server",
+    "run:client": "react-scripts start",
+    "run:server": "node ./server"
+  },
+  "keywords": [
+    "music-player",
+    "react music player",
+    "music player app",
+    "ganna",
+    "savvan",
+    "spotify",
+    "stateless component",
+    "react js",
+    "audio player"
+  ],
+  "author": "akashsairaja@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
