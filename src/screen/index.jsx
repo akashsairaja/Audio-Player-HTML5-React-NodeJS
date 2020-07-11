@@ -51,7 +51,6 @@ const MyMusicPlayer = () => {
 	};
 
 	const playing = (trackNumber = 0, canPlay = false, playNext = false) => {
-		updateActiveList(trackNumber);
 		playerTrackStatus.currentTrack = trackNumber;
 		playerSlider.current.classList.remove('form-control');
 		const { name, path } = tracks[trackNumber];
@@ -66,6 +65,7 @@ const MyMusicPlayer = () => {
 			playIcon.classList.add('fa-play');
 			current.pause();
 			playerStatus.innerText = 'paused';
+			document.title = `Paused - ${name}`;
 			playerSlider.current.value = playerTrackStatus.currentRange;
 			playerTrackStatus.paused = true;
 		} else {
@@ -75,6 +75,8 @@ const MyMusicPlayer = () => {
 				current.crossOrigin = 'anonymous';
 			}
 			playerStatus.innerText = 'Now playing - '.concat(name);
+			document.title = `Now playing - ${name}`;
+			updateActiveList(trackNumber);
 			playIcon.classList.remove('fa-play');
 			playIcon.classList.add('fa-pause');
 			console.log('start playing');

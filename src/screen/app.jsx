@@ -82,6 +82,7 @@ const MyMusicPlayer = () => {
 			playIcon.classList.add('fa-play');
 			current.pause();
 			playerStatus.innerText = 'paused';
+			document.title = `Paused - ${name}`;
 			playerSlider.current.value = playerTrackStatus.currentRange;
 			playerTrackStatus.paused = true;
 		} else {
@@ -92,6 +93,7 @@ const MyMusicPlayer = () => {
 			}
 			playerStatus.innerText = 'Now playing - '.concat(name);
 			playIcon.classList.remove('fa-play');
+			document.title = `Now playing - ${name}`;
 			playIcon.classList.add('fa-pause');
 			console.log('start playing');
 			current.play();

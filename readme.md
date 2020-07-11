@@ -7,8 +7,18 @@ Please be sure you are using `nodeJS above 8.9.3 LTS` and `npm above 6`
 Cloning the repository locally:
 
 ```bash
-git clone 
+git clone git@github.com:akashsairaja/Audio-Player-HTML5-React-NodeJS.git
 ```
+
+```App Overview Screen```
+![alt text](./images/overview.png)
+
+``` App Controls animation overiew ```
+![alt text](./images/app.gif)
+
+<a id="raw-url" href="https://github.com/akashsairaja/Audio-Player-HTML5-React-NodeJS/images/app/mp4"> 
+Click here to Download App Video</a>
+ 
 
 ## Installing the app dependencies
 ```cmd
@@ -23,7 +33,7 @@ npm start
 `Updating  Folder Directory`
 
 ~~~~
-cd /server/index.js
+vi /server/index.js
 line Number : 8 
 update the directory with your local directory
  ~~~~
